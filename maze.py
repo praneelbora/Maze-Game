@@ -7,15 +7,6 @@ BLACK=(0,0,0)
 FPS=60
 V=5
 
-MAIN = pygame.display.set_mode((900,600))
-
-MAZE = pygame.image.load("Assets/Images/maze1.png")
-MAZE = pygame.transform.scale(MAZE,(HEIGHT,HEIGHT))
-DOT = pygame.image.load("Assets/Images/dot.png")
-DOT = pygame.transform.scale(DOT,(50,50))
-END = pygame.image.load("Assets/Images/end.png")
-END = pygame.transform.scale(END,(480,250))
-
 f = open("Assets/Files/maze1.txt", 'r')
 values = f.readlines()
 start_x = int(values[0])
@@ -26,6 +17,15 @@ end_y_1 = int(values[4])
 end_y_2 = int(values[5])
 end_axi = int(values[6])
 end_mov = int(values[7])
+dotsize = int(values[8])
+MAIN = pygame.display.set_mode((900,600))
+
+MAZE = pygame.image.load("Assets/Images/maze1.png")
+MAZE = pygame.transform.scale(MAZE,(HEIGHT,HEIGHT))
+DOT = pygame.image.load("Assets/Images/dot.png")
+DOT = pygame.transform.scale(DOT,(dotsize,dotsize))
+END = pygame.image.load("Assets/Images/end.png")
+END = pygame.transform.scale(END,(480,250))
 
 def draw(dot,check):
     MAIN.fill(BG)
@@ -112,7 +112,7 @@ def check(dot):
 def main():
     running = True
     clock = pygame.time.Clock()
-    dot = pygame.Rect(start_x,start_y,50,50)
+    dot = pygame.Rect(start_x,start_y,dotsize,dotsize)
     MAIN.fill(BG)
     while running:
         clock.tick(FPS)
