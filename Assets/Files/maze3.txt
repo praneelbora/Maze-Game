@@ -1,4 +1,12 @@
-30
+438
+0
+434
+442
+530
+600
+1
+1
+24
 
 Line 1 -> starting x position
 Line 2 -> starting y position

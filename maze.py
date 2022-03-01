@@ -7,7 +7,7 @@ BLACK=(0,0,0)
 FPS=60
 V=5
 
-f = open("Assets/Files/maze1.txt", 'r')
+f = open("Assets/Files/maze3.txt", 'r')
 values = f.readlines()
 start_x = int(values[0])
 start_y = int(values[1])
@@ -20,7 +20,7 @@ end_mov = int(values[7])
 dotsize = int(values[8])
 MAIN = pygame.display.set_mode((900,600))
 
-MAZE = pygame.image.load("Assets/Images/maze1.png")
+MAZE = pygame.image.load("Assets/Images/maze3.png")
 MAZE = pygame.transform.scale(MAZE,(HEIGHT,HEIGHT))
 DOT = pygame.image.load("Assets/Images/dot.png")
 DOT = pygame.transform.scale(DOT,(dotsize,dotsize))
