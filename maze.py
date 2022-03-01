@@ -26,8 +26,7 @@ end_y_1 = int(values[4])
 end_y_2 = int(values[5])
 end_axi = int(values[6])
 end_mov = int(values[7])
-start_a = int(values[8])
-start_d = int(values[9])
+
 def draw(dot,check):
     MAIN.fill(BG)
     MAIN.blit(MAZE,(150,0))
