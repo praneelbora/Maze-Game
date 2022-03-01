@@ -35,23 +35,7 @@ def draw(dot,check):
     if(check==1):
         MAIN.blit(END,(210,175))
     pygame.display.update()
-def start(dot):
-   
-    clock = pygame.time.Clock()
-    if(start_a==0):
-        dot.x-=start_d*90
-    if(start_a==1):
-        dot.y-=start_d*90
-        i=0
-    while(i<90):
-        clock.tick(FPS*3000)
-        if(start_a==0):
-            dot.x+=start_d
-        else:
-            dot.y+=start_d
-        draw(dot,0)
-        i+=1
-    draw(dot,0)
+
 def move_dot(keypress,dot):
     
     if(keypress[pygame.K_LEFT] and dot.x-V>150):
@@ -131,7 +115,6 @@ def main():
     clock = pygame.time.Clock()
     dot = pygame.Rect(start_x,start_y,50,50)
     MAIN.fill(BG)
-    start(dot)
     while running:
         clock.tick(FPS)
 

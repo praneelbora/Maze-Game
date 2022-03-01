@@ -6,9 +6,13 @@
 20
 1
 -1
-1
-1
 
-x=0
 
-y=1
+Line 1 -> starting x position
+Line 2 -> starting y position
+Line 3 -> ending smaller x position
+Line 4 -> ending larger x position
+Line 5 -> ending smaller y position
+Line 6 -> ending larger y position
+Line 7 -> ending direction x=0,y=1
+Line 8 -> animation speed of ball/dot during ending
