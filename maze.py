@@ -6,10 +6,10 @@ BG = (255,255,255)
 BLACK=(0,0,0)
 FPS=60
 V=5
-MAZE = pygame.image.load("Assets/Images/maze1.png")
+MAZE = pygame.image.load("Assets/Images/maze4.png")
 MAZE = pygame.transform.scale(MAZE,(HEIGHT,HEIGHT))
 
-f = open("Assets/Files/maze1.txt", 'r')
+f = open("Assets/Files/maze4.txt", 'r')
 values = f.readlines()
 start_x = int(values[0])
 start_y = int(values[1])
