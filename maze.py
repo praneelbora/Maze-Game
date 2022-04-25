@@ -1,4 +1,4 @@
-import time
+
 import pygame
 
 WIDTH, HEIGHT = 900,600
