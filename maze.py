@@ -1,15 +1,15 @@
 
 import pygame
-
+nth_maze=1
 WIDTH, HEIGHT = 900,600
 BG = (255,255,255)
 BLACK=(0,0,0)
 FPS=60
 V=5
-MAZE = pygame.image.load("Assets/Images/maze4.png")
+MAZE = pygame.image.load(f"Assets/Images/maze{nth_maze}.png")
 MAZE = pygame.transform.scale(MAZE,(HEIGHT,HEIGHT))
 
-f = open("Assets/Files/maze4.txt", 'r')
+f = open(f"Assets/Files/maze{nth_maze}.txt", 'r')
 values = f.readlines()
 start_x = int(values[0])
 start_y = int(values[1])
